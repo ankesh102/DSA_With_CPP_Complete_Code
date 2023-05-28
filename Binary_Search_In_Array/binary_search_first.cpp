@@ -7,7 +7,9 @@ int binarySearch(int arr[], int size, int key)
 {
     int start = 0, end = size-1;
 
-    int mid = (start + end) / 2;
+    // int mid = (start + end) / 2; // INT_MAX Error occur if Start=end=2^31-1
+    // SO to Avoid the write mid like this 
+    int mid = start + ((end - start) / 2) ;
 
     while(start <= end)
     {
