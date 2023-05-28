@@ -26,7 +26,7 @@ int binarySearch(int arr[], int size, int key)
         {
             end = mid - 1;
         } 
-        mid = (start + end) / 2;
+        mid = mid = start + ((end - start) / 2) ;
     }
     return -1; // if element not found case present 
 }
