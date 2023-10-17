@@ -13,7 +13,7 @@ class stack {
     stack( int size ) {
         this -> size = size ;
         arr = new int[size] ;
-        int top = -1 ;
+        top = -1 ;
     }
 
     void push( int element ) {
@@ -59,17 +59,19 @@ int main()
 {
 
     // creating stack 
-    stack st(5) ; // Creating stack and passing 5 as size of stack
+    stack st(4) ; // Creating stack and passing 5 as size of stack
 
     // push 
     st.push(22) ;
     st.push(43) ;
-    // st.push(44) ;
+    st.push(44) ;
 
-    // cout << st.peek() << endl ;
+    cout << st.peek() << endl ;
 
     // pop
+    st.pop(); 
 
+    cout << st.peek() << endl ;
 
     // isEmpty
 
@@ -78,6 +80,9 @@ int main()
     } else {
         cout << "Stack is not empty" << endl ;
     }
+
+
+    
 
 
 
